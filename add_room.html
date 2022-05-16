@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Room</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div class="conatiner">
+        <div style="padding-top: 2%; padding-left: 3%;">
+            <button onclick="history.back()" class="btn btn-secondary"><- Go Back</button>
+        </div>
+    </div>
+    <div style="padding-bottom: 2%;"></div>
+    <div style="padding-top: 1%; padding-bottom: 3%;">
+        <center>
+            <h1 class="display-4">Add Room</h1>
+        </center>
+        <hr style="width:40%; border: solid 2px grey;">
+    </div>
+    <center>
+        <form action="add_room_backend.php" method="post">
+            <label for="room_number">Room Number: </label>
+            <input type="text" name="room_number">
+            <br>
+            <label style="padding-left: 2%;" for="remarks">Remarks: </label>
+            <input type="text" name="remarks">
+            <br>
+            <div style="padding-top: 2%;"></div>
+            <input class="btn btn-primary" type="submit" value="Add Room">
+        </form>
+    </center>
+</body>
+
+</html>

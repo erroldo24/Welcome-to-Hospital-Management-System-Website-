@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Doctor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div style="padding-top: 2%; padding-left: 3%;">
+            <button onclick="history.back()" class="btn btn-secondary"><- Go Back</button>
+        </div>
+    </div>
+    <center >
+        <h1 style="padding-top: 3%;" class="display-4">Add Doctor</h1>
+        <hr style="width: 30%; border:grey solid 2px;">
+        <div style="padding-top: 3%; padding-bottom: 0%;"></div>
+        <form action="add_doctor_backend.php" method="post">
+            <label for="name">Doctor Name: </label>
+            <input type="text" name="name">
+            <br>
+            <label for="remarks" style="padding-left: 2%;">Remarks: </label>
+            <input type="text" name="remarks">
+            <br>
+            <div style="padding-top: 2%;"></div>
+            <input type="submit" value="Add Doctor">
+        </form>
+    </center>
+</body>
+
+</html>
